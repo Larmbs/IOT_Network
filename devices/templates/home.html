@@ -1,0 +1,81 @@
+{% extends "base.html" %} 
+
+{% block body %}
+<body>
+  <!-- Header-->
+  <header class="bg-dark py-5" style="height: 80vh;">
+    <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center my-5">
+            <h1 class="display-5 fw-bolder text-white mb-2">
+              Welcome Home
+            </h1>
+            <p class="lead text-white-50 mb-4">
+              Enjoy the freedom of tracking your devices from anywhere
+            </p>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+              <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features"
+                >Get Started</a
+              >
+              <a class="btn btn-outline-light btn-lg px-4" href="#!"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+
+<!-- Features section-->
+<section class="py-5 border-bottom" id="features">
+  <div class="container px-5 my-5">
+    <div class="row gx-5">
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+          <i class="bi bi-collection"></i>
+        </div>
+        <h2 class="h4 fw-bolder">Easy To Use</h2>
+        <p>
+          This software is free and easy to use. We employ techniques to simplify
+          the process of managing your devices. 
+        </p>
+        <a class="text-decoration-none" href="#!">
+          Call to action
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+          <i class="bi bi-building"></i>
+        </div>
+        <h2 class="h4 fw-bolder">Customizable</h2>
+        <p>
+          Users can customize their setup as they wish. Nodes can be created when needed
+          to show the correct information about a product.
+        </p>
+        <a class="text-decoration-none" href="#!">
+          Call to action
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+          <i class="bi bi-toggles2"></i>
+        </div>
+        <h2 class="h4 fw-bolder">Safe</h2>
+        <p>
+          This network is yours, you choose what to do with it and how to secure it. You have the ability
+          to place this network solely locally ensuring safety from any outside parties.
+        </p>
+        <a class="text-decoration-none" href="#!">
+          Call to action
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -4,6 +4,7 @@ from django.db import models
 class Device(models.Model):
     device_id = models.CharField(max_length=100)
     device_name = models.CharField(max_length=50)
+    device_description = models.CharField(max_length=150)
     
     def __str__(self):
         return self.device_name + " " + self.device_id
