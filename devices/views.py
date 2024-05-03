@@ -13,6 +13,6 @@ def tracker_device_inspect(request, device_id):
     sensors = fetch_device_sensors(device_id)
     return render(request, 'tracker/device_inspect.html', {"device_list":Device.objects.all(), 'sensors':sensors})
     
-
 def credits(request):
     return render(request, 'credits.html', {"device_list":Device.objects.all()})
+
