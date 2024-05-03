@@ -34,4 +34,12 @@ class SensorDataFloat(models.Model):
     def __str__(self):
         return f"[{self.sensor.sensor_name}]|{self.time.isoformat()}| Value: {str(self.value)}"
     
+def fetch_device_sensors(device_id):
+    try:
+        device = Device.objects.get(device_id=device_id)
+        sensors = Sensor.objects.filter(device=device)
+        return sensors
+    except Device.DoesNotExist:
+        return []
+    
 """Device Inputs"""

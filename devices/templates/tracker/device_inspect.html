@@ -4,9 +4,10 @@
 <div>
     <h1>List of device sensors and inputs</h1>
 
-
-
+    <div>
+        {% for sensor in sensors %}
+            {% include 'tracker/sensor_overview.html' with sensor_name=sensor.sensor_name sensor_description=sensor.sensor_description %}
+        {% endfor %}
+    </div>
 </div>
-
-
 {% endblock %}
